@@ -1,0 +1,137 @@
+html {
+  box-sizing: border-box;
+}
+body {
+  color: white;
+  background-color: black;
+  font-family: sans-serif;
+  min-height: 100vh;
+  margin: 0px;
+  line-height: 1.5em;
+}
+
+/*tout les bouttons*/
+button {
+  text-transform: uppercase;
+  background-color: rgb(221, 30, 30, 0.9);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 10px 13px;
+  width: 250px;
+}
+/*menu*/
+header button {
+  width: auto;
+  padding: 8px 10px;
+}
+.loginBtn {
+  background-color: rgb(0, 0, 0, 0.55);
+}
+.lgbt {
+  position: fixed;
+  right: 20px;
+  top: 10px;
+}
+/*menu barre noire*/
+nav {
+  background-color: black;
+  padding: 10px 0;
+  z-index: 1;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  display: none;
+}
+.logo {
+  width: 50px;
+}
+/*main section 1*/
+.offre {
+  background-image: url("images/home.jpg");
+  background-size: 1400px 1000px;
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+.bill {
+  padding: 50px 0 50px 50px;
+  width: 50%;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 1) 28%,
+    rgba(0, 0, 0, 0.7931547619047619) 55%,
+    rgba(0, 0, 0, 0.5886729691876751) 87%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+.bill .logo {
+  width: 150px;
+}
+.bill h1 {
+  line-height: 35px;
+}
+.container {
+  display: grid;
+  grid-gap: 20px 30px;
+  grid-template-columns:
+    "item1 item2"
+    "item3 item3";
+}
+.item3 {
+  grid-column: 1/3;
+}
+.container span {
+  font-size: 1.5em;
+}
+.container p {
+  font-size: 0.8em;
+}
+
+/*main section 2*/
+.service {
+  width: 80%;
+  margin: 100px auto;
+  display: flex;
+  align-items: center;
+}
+.service .item1 {
+  width: 60%;
+}
+.service .item2 {
+  width: 30%;
+  position: relative;
+  left: 10%;
+}
+
+/*main section 3*/
+.app {
+  width: 80%;
+  margin: 100px auto;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+.app .item1 {
+  width: 60%;
+  position: relative;
+  left: 10%;
+}
+.app .item2 {
+  width: 30%;
+}
+.dlBtn {
+  display: flex;
+  justify-content: space-between;
+}
+.dlBtn button {
+  width: 45%;
+  font-size: 1em;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.dlBtn button i {
+  font-size: 3.5em;
+}
